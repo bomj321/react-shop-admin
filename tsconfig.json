@@ -14,11 +14,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"]
+      "@styles/*": ["styles/*"],
+      "@components/*": ["components/*"],
+      "@common/*": ["common/*"],
+      "@layout/*": ["layout/*"],
+      "@services/*": ["services/*"],
+      "@api/*": ["services/api/*"],
+      "@hooks/*": ["hooks/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx","**/*.jsx","**/*.js"],
   "exclude": ["node_modules"]
 }
